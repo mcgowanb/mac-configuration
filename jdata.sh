@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "Java Info:"
+echo "Java version info:"
 echo "------------------------------"
 java -version
-echo "Maven Info"
+echo "Maven version info:"
 echo "------------------------------"
 mvn -v
