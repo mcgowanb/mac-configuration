@@ -18,8 +18,8 @@ alias docker-rm-all="docker rm \$(docker ps -a -q);docker rmi \$(docker images -
 alias docker-rm-untagged="docker rmi \$(docker images | grep \"^<none>\" | awk \"{print \$3}\")"
 alias docker-rm-stopped="docker rm \$(docker ps -a -q)"
 
-alias j8="jenv shell 1.8.0.181 && source ~/.mavenrc && sh $HOME/bin/jdata.sh"
-alias j11="jenv shell 11.0 && source ~/.mavenrc && sh $HOME/bin/jdata.sh"
+alias j8="jenv shell 1.8.0.181 && source ~/.mavenrc && sh $HOME/bin/jdata"
+alias j11="jenv shell 11.0 && source ~/.mavenrc && sh $HOME/bin/jdata"
 
 if [ -f "/usr/local/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
@@ -35,5 +35,5 @@ fi
 #export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ 
 export PATH="$HOME/.jenv/bin:$PATH:$HOME/bin"
 eval "$(jenv init -)"
-sh $HOME/bin/jdata.sh
+sh $HOME/bin/jdata
 
