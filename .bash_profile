@@ -1,4 +1,4 @@
-alias ll="ls -alhitr"
+alias ll="ls -alhtr"
 alias mci="mvn clean install"
 alias dev="cd ~/dev/git"
 alias coll="cd ~/dev/college"
